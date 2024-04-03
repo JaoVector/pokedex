@@ -117,7 +117,7 @@ body {
 #top {
     height: 40%;
     padding: 0.5rem;
-    background: url('/imagens/pokeball.png');
+    background: url('imagens/pokeball.png');
     background-repeat: no-repeat;
     background-position: right;
 }
