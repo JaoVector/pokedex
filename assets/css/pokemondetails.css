@@ -1,0 +1,236 @@
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Rock */
+.rock {
+    background-color: rgb(182, 158, 49);
+}
+
+/* Ghost */
+.ghost {
+    background-color: rgb(112, 85, 155);
+}
+
+/* Steel */
+.steel {
+    background-color: rgb(183, 185, 208);
+}
+
+/* Water */
+.water {
+    background-color: rgb(100, 147, 235);
+}
+
+/* Grass */
+.grass {
+    background-color: rgb(116, 203, 72);
+}
+
+/* Psychic */
+.psychic {
+    background-color: rgb(251, 85, 132);
+}
+
+/* Ice */
+.ice {
+    background-color: rgb(154, 214, 223);
+}
+
+/* Dark */
+.dark {
+    background-color: rgb(117, 87, 76);
+}
+
+/* Fairy */
+.fairy {
+    background-color: rgb(230, 158, 172);
+}
+
+/* Normal */
+.normal {
+    background-color: rgb(170, 166, 127);
+}
+
+/* Fighting */
+.fighting {
+    background-color: rgb(193, 34, 57);
+}
+
+/* Flying */
+.flying {
+    background-color: rgb(168, 145, 236);
+}
+
+/* Poison */
+.poison {
+    background-color: rgb(164, 62, 158);
+}
+
+/* Ground */
+.ground {
+    background-color: rgb(222, 193, 107);
+}
+
+/* Bug */
+.bug {
+    background-color: rgb(167, 183, 35);
+}
+
+/* Fire */
+.fire {
+    background-color: rgb(245, 125, 49);
+}
+
+/* Electric */
+.electric {
+    background-color: rgb(249, 207, 48);
+}
+
+/* Dragon */
+.dragon {
+    background-color: rgb(112, 55, 255);
+}
+
+body {
+    background-color: #d6d6d6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#pokedex {
+    width: 22rem;
+    height: 35rem;
+    background-color: rgb(247, 250, 245);
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0.3rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#top {
+    height: 40%;
+    padding: 0.5rem;
+    background: url('/imagens/pokeball.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 0 1.2rem;
+}
+
+#top-bar #name {
+    display: flex;
+    text-align: left;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#top-bar #number { 
+    font-weight: bold;
+}
+
+#poke-image {
+    display: flex;
+    justify-content: center;
+}
+
+#pokemon-image {
+    width: 300px;
+    height: 200px;
+    transform: translateY(4rem);
+}
+
+#data {
+    background-color: white;
+    height: 60%;
+    border-radius: 8px;
+    padding-top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.type {
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#data h4 {
+    text-align: center;
+}
+
+#stats {
+    width: 80%;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+}
+
+.stat-row {
+    display: flex;
+}
+
+.stat-desc, .stat-number {
+    width: 13%;
+}
+
+.stat-desc {
+    color: rgb(116, 203, 72);
+    font-weight: bold;
+    text-align: right;
+    padding-right: 0.6rem;
+    border-right: 1px solid gray;
+    transition: color 0.5s ease-in-out;
+}
+
+.stat-number {
+    border-left: 1px solid gray;
+    text-align: right;
+}
+
+.stat-bar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding-left: 0.6rem;
+}
+
+.bar-outer {
+    background-color: rgba(116, 203, 72, 0.3);
+    display: flex;
+    width: 100%;
+    height: 0.3rem;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.bar-inner {
+    background-color: rgb(116, 203, 72);
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.base-stats {
+    transition: color 0.5s ease-in-out;
+}
