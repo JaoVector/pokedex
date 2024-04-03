@@ -35,7 +35,7 @@ pokemons.addEventListener('click', (event) => {
    {
       pokeName = objetoClick.textContent
    }
-   window.open(`/pokemondetails.html?name=${pokeName}`, '_blank')
+   window.open(`/pokedex/pokemondetails.html?name=${pokeName}`, '_blank')
 })
 
 
